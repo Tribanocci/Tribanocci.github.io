@@ -1,0 +1,394 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="20" scrolly="0" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="-175.36255836486794" scrolly="-436.9815902709963" scale="0.9070294784580498">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="su+QQ,Jt=V2gXZ[m8wFL">assempled</variable>
+      <variable id="Jo^k)MQ97d]EG=/_$FK:">annotations_displayd</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="6F7#CcWruaAAHtrLCHWG" x="190" y="90">
+      <field name="VAR" id="su+QQ,Jt=V2gXZ[m8wFL">assempled</field>
+      <value name="VALUE">
+        <block type="logic_boolean" id="m#8bL4.z_s}UU7_Ci{L@">
+          <field name="BOOL">TRUE</field>
+        </block>
+      </value>
+      <next>
+        <block type="variables_set" id="M.7B*lKEt}Rz36i=L])E">
+          <field name="VAR" id="Jo^k)MQ97d]EG=/_$FK:">annotations_displayd</field>
+          <value name="VALUE">
+            <block type="logic_boolean" id="(KUd^9etz}#BK7?OL)#F">
+              <field name="BOOL">FALSE</field>
+            </block>
+          </value>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="autoRotateCamera" id="0APAY9[Sc4I_65`Ta`qx" x="350" y="290">
+      <field name="ON_OFF">ON</field>
+      <value name="SPEED">
+        <shadow type="math_number" id="Y|LEs5IM[q=A)Lr+Wz[8">
+          <field name="NUM">-2</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="whenClicked" id="Z)Vw_Dk+{_JSJt.4pQVV" inline="false">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <field name="DOUBLE_CLICK">FALSE</field>
+          <field name="LEFT_BUTTON">TRUE</field>
+          <field name="MIDDLE_BUTTON">TRUE</field>
+          <field name="RIGHT_BUTTON">TRUE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="B2RsvK@8Y=}Qa=x|=,mp">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="allObjectList" id="8grp3=)8nA(Rn,x:qjhu"></block>
+          </value>
+          <statement name="DO">
+            <block type="autoRotateCamera" id="p!uFZ|qr7*J-.3g[@jI2">
+              <field name="ON_OFF">OFF</field>
+              <value name="SPEED">
+                <shadow type="math_number" id=",PU6ABsvg;jYqgz/W~zQ">
+                  <field name="NUM">2</field>
+                </shadow>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="s2)m-P0:B9Te!50+y%Dp" x="210" y="490">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="e,1+6`losDJmh!|iARKb">
+          <field name="TEXT">disassemply_button</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="controls_ifelse" id="R@5]lI`fr!.egXoI5j#~">
+          <value name="IF0">
+            <block type="logic_compare" id="gSDDzOu4-He~x_Iw$j_m">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="4%gIyf}{xnU_`iGDeWC(">
+                  <field name="VAR" id="su+QQ,Jt=V2gXZ[m8wFL">assempled</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean" id="tT*jc==~tb9Ls`tnc:sV">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="playAnimationAdv" id="V{g5R0ic]p%7b[#ys$JG">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="true"></mutation>
+              <field name="REVERSED">FALSE</field>
+              <field name="LOOP">LoopOnce</field>
+              <value name="VALUE">
+                <shadow type="animationList" id="nHEy_qez[E07QI7,Y@dC">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="getAnimations" id="zHFUplBB.m=(/Lmuie)[">
+                  <value name="OBJECTINPUT">
+                    <shadow type="objectList" id="St:/q1oB~MHTKG*{kEm.">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="groupList" id=":}c!doyR`$8fT9$eS5QP">
+                      <field name="FIELDNAME">Rod_Disassemply</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="variables_set" id="poIAd#SRc%wgp,o(}@}[">
+                  <field name="VAR" id="su+QQ,Jt=V2gXZ[m8wFL">assempled</field>
+                  <value name="VALUE">
+                    <block type="logic_boolean" id="+admkzXe7g3sqHdEc29J">
+                      <field name="BOOL">FALSE</field>
+                    </block>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </statement>
+          <statement name="ELSE">
+            <block type="playAnimationAdv" id="gcNAmaA}?p737Y-L/Xzc">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="true" enablewhenfinished="true"></mutation>
+              <field name="REVERSED">TRUE</field>
+              <field name="LOOP">LoopOnce</field>
+              <value name="VALUE">
+                <shadow type="animationList" id="nHEy_qez[E07QI7,Y@dC">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="getAnimations" id="s~Xx8Ckh3.-3[%aIB+rQ">
+                  <value name="OBJECTINPUT">
+                    <shadow type="objectList" id="St:/q1oB~MHTKG*{kEm.">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="groupList" id="9/270h|=A$:NwV.c`1E(">
+                      <field name="FIELDNAME">Rod_Disassemply</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <value name="FROM">
+                <shadow type="math_number" id="k(l0[vudnJ;7yW5;X(L^">
+                  <field name="NUM">0</field>
+                </shadow>
+              </value>
+              <value name="TO">
+                <shadow type="math_number" id="h;-|,yR$!t5/!X,a:M@M">
+                  <field name="NUM">70</field>
+                </shadow>
+              </value>
+              <value name="SPEED">
+                <shadow type="math_number" id="~i5-Xeb0R`a9twL:/Yvt">
+                  <field name="NUM">1</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="variables_set" id="t~qZ+W+=Nv0O9e7n=MBv">
+                  <field name="VAR" id="su+QQ,Jt=V2gXZ[m8wFL">assempled</field>
+                  <value name="VALUE">
+                    <block type="logic_boolean" id="XZ/iW~{EUCsslf@a%n[6">
+                      <field name="BOOL">TRUE</field>
+                    </block>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="F)R@:_0o9gA`}{_o`I~!" x="249" y="798">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="QM!Mu?bor!{TR;*Ryh:E">
+          <field name="TEXT">annotation_button</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="controls_ifelse" id=":rsJ2*|vz2$q18-{TzXu">
+          <value name="IF0">
+            <block type="logic_compare" id="2K~s;Q6m#w!QT~^cT5q%">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="TA-EsM8?y{VvI|1h^h^n">
+                  <field name="VAR" id="Jo^k)MQ97d]EG=/_$FK:">annotations_displayd</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean" id="}k2[2(ey:tq6zH`8T!0[">
+                  <field name="BOOL">FALSE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="setHTMLElemStyle" id="pZmq^d.{v9KJYcCV^zw+">
+              <field name="PROPERTY">display</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="8?i2R@rEA.HF[trZ?B78">
+                  <field name="TEXT">block</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text" id="vBFcU/.F9y.#{oJz#vk%">
+                  <field name="TEXT"></field>
+                </shadow>
+                <block type="lists_create_with" id="8KHw:M4!OnArBY+)1m(6">
+                  <mutation items="3"></mutation>
+                  <value name="ADD0">
+                    <block type="text" id="o%VebQ/I1?;Z)dVFIzkA">
+                      <field name="TEXT">ring_an</field>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="text" id="9Njr?;%;]h8`=y,/KQmL">
+                      <field name="TEXT">slider_an</field>
+                    </block>
+                  </value>
+                  <value name="ADD2">
+                    <block type="text" id="[K6||oKb1L%H8ufB0_?#">
+                      <field name="TEXT">rod_an</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="J@Ebqt2ZM%$3$g%M}UY3">
+                  <field name="VAR" id="Jo^k)MQ97d]EG=/_$FK:">annotations_displayd</field>
+                  <value name="VALUE">
+                    <block type="logic_boolean" id="rFPkW4f4#F2=N~I,i@v2">
+                      <field name="BOOL">TRUE</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <statement name="ELSE">
+            <block type="setHTMLElemStyle" id="v%:;4)GW5TU*T~a/rN8q">
+              <field name="PROPERTY">display</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="P--,^tvv0A%hchR%ytLt">
+                  <field name="TEXT">none</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text" id="vBFcU/.F9y.#{oJz#vk%">
+                  <field name="TEXT"></field>
+                </shadow>
+                <block type="lists_create_with" id="L(.;ZkIx9RQ4:VBLm+ys">
+                  <mutation items="3"></mutation>
+                  <value name="ADD0">
+                    <block type="text" id="vPKA[QcRq3v~fd|feidB">
+                      <field name="TEXT">ring_an</field>
+                    </block>
+                  </value>
+                  <value name="ADD1">
+                    <block type="text" id="Ud?bJB^)|]Ny`RlU6uTE">
+                      <field name="TEXT">slider_an</field>
+                    </block>
+                  </value>
+                  <value name="ADD2">
+                    <block type="text" id="k|jepg4Np(txFFkuvu$^">
+                      <field name="TEXT">rod_an</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="variables_set" id="NX_5Meg?$zWH;]Ve@)d^">
+                  <field name="VAR" id="Jo^k)MQ97d]EG=/_$FK:">annotations_displayd</field>
+                  <value name="VALUE">
+                    <block type="logic_boolean" id="f5n`GmGvsMK?a$)Lv1}-">
+                      <field name="BOOL">FALSE</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <tab name="annotations" type="SecondaryTab" active="false" scrollx="-2.2737367544323206e-13" scrolly="1.1368683772161603e-13" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="addAnnotation" id="Z3)~%`26855Mzn9d{nm7" x="30" y="150">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+      <value name="ANNOTATION">
+        <shadow type="text" id="o1,dJl}B868?L(rX0Tor">
+          <field name="TEXT">Διωστήρας</field>
+        </shadow>
+      </value>
+      <value name="TARGET">
+        <shadow type="objectList" id="oRv-g$t,/..Y,Lap{T@.">
+          <field name="FIELDNAME">rod_annotation</field>
+        </shadow>
+      </value>
+      <value name="CONTENTS">
+        <shadow type="text" id="nMjy6X26)jcha9Mc0~mv">
+          <field name="TEXT">Ο διωστήρας μετατρέπει την παλινδρομική κίνηση του εμβόλου σε περιστροφική κίνηση στον στροφαλοφόρο άξιονα</field>
+        </shadow>
+      </value>
+      <value name="ID">
+        <shadow type="text" id="9S~F:N3)eNCDqF.X}e,y">
+          <field name="TEXT">rod_an</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="addAnnotation" id="[w3J46H:wgM^8Mj`UO{I">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+          <value name="ANNOTATION">
+            <shadow type="text" id="Icyhy$3.#HE^+#S5tIJa">
+              <field name="TEXT">Ημικέλυφος</field>
+            </shadow>
+          </value>
+          <value name="TARGET">
+            <shadow type="objectList" id="t=xR*bron[i9U5X_bFGB">
+              <field name="FIELDNAME">ring_annotation</field>
+            </shadow>
+          </value>
+          <value name="CONTENTS">
+            <shadow type="text" id="#n26:9)IlOK^#ODwV9Qx">
+              <field name="TEXT">Το κέλυφος ασφαλίζει την σύνδεση του Διωστήρα με το κομβίο του ζυγώματος. Εδω φαίνεται το κάτω ημικέλυφος</field>
+            </shadow>
+          </value>
+          <value name="ID">
+            <shadow type="text" id="KO$IKZzY5V+!bjy$y1e_">
+              <field name="TEXT">ring_an</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="addAnnotation" id="h0nkc?PHU{c4./^pkmRz">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+              <value name="ANNOTATION">
+                <shadow type="text" id="boq(u1vM(hY;82^JgPk)">
+                  <field name="TEXT">Πέδιλο</field>
+                </shadow>
+              </value>
+              <value name="TARGET">
+                <shadow type="objectList" id="m;m)bSXn@sm0nXI_nj/2">
+                  <field name="FIELDNAME">slider_annotation</field>
+                </shadow>
+              </value>
+              <value name="CONTENTS">
+                <shadow type="text" id="KoR,8/*;-IbNjrRw3Nq-">
+                  <field name="TEXT">Το πέδιλο βρίσκεται σε επαφή με τις ευθυντηρίες, επιβάλοντας την κίνηση του ζυγώματος κατά τον κατακόρυφο άξονα</field>
+                </shadow>
+              </value>
+              <value name="ID">
+                <shadow type="text" id="Zq5Nl:,X_88u5XJD7hdq">
+                  <field name="TEXT">slider_an</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="setHTMLElemStyle" id="pZmq^d.{v9KJYcCV^zw+">
+                  <field name="PROPERTY">display</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="VALUE">
+                    <block type="text" id="8?i2R@rEA.HF[trZ?B78">
+                      <field name="TEXT">none</field>
+                    </block>
+                  </value>
+                  <value name="ID">
+                    <shadow type="text" id="vBFcU/.F9y.#{oJz#vk%">
+                      <field name="TEXT"></field>
+                    </shadow>
+                    <block type="lists_create_with" id="8KHw:M4!OnArBY+)1m(6">
+                      <mutation items="3"></mutation>
+                      <value name="ADD0">
+                        <block type="text" id="o%VebQ/I1?;Z)dVFIzkA">
+                          <field name="TEXT">ring_an</field>
+                        </block>
+                      </value>
+                      <value name="ADD1">
+                        <block type="text" id="9Njr?;%;]h8`=y,/KQmL">
+                          <field name="TEXT">slider_an</field>
+                        </block>
+                      </value>
+                      <value name="ADD2">
+                        <block type="text" id="[K6||oKb1L%H8ufB0_?#">
+                          <field name="TEXT">rod_an</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1025.8" viewport-y="258" viewport-w="659.2" viewport-h="410.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
