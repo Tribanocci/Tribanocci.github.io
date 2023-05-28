@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Single Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    /* CSS for the stylized strip on top */
+    .top-strip {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+	  text-align: center;
+    }
+
+    /* CSS for the main body with gradient background */
+    body, html {
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .main-body {
+      display: flex;
+      flex-direction: column;
+      min-height: 70vh;
+      background: linear-gradient(to bottom, #e6e6e6, #f2f2f2);
+      padding-top: 10px;
+    }
+
+    /* CSS for the carousel selection menu */
+    .carousel-container {
+      text-align: center;
+      position: relative;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 10px;
+    }
+
+    .carousel-image-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .carousel-image {
+      max-width: 100%;
+      max-height: 65vh;
+      height: auto;
+      border: 4px solid #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .carousel-image-container:hover .carousel-image {
+      transform: scale(1.05);
+    }
+
+    .carousel-arrows {
+      position: absolute;
+      top: calc(50% - 40px);
+      display: flex;
+      align-items: center;
+      width: 80%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+
+    .carousel-arrows span {
+      cursor: pointer;
+      font-size: 48px;
+      color: #555;
+      margin: 0 10px;
+      background-color: #fff;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.39);
+      outline: 4px solid rgba(255, 255, 255, 0.5);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .carousel-arrows span:hover {
+      background-color: #eee;
+      transform: scale(1.1);
+    }
+
+    .carousel-arrows span:first-child {
+      margin-left: 10px;
+      margin-right: auto;
+    }
+
+    .carousel-arrows span:last-child {
+      margin-left: auto;
+      margin-right: 10px;
+    }
+
+    .bottom-container {
+      background-color: #f9f9f9;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+  <script>
+    // JavaScript code for carousel functionality
+    var images = ['image1.jpg', 'image2.jpg', 'image3.jpg']; // Replace with your image paths
+    var links = ['https://v3d.net/jtj', 'https://v3d.net/k1b', 'https://v3d.net/ka1']; // Replace with your desired URLs
+    var currentIndex = 0;
+	var dialogHeaders = [ "Βασικά εξαρτήματα Δίχρονου Πετρελαιοκινητήρα", 
+							"Κύκλος Αέρα στην Δίχρονη Πετρελαιομηχανή", 
+							"Στροβιλοϋπερπληρωτής Δίχρονης Πετρελαιομηχανής"];
+	var dialogTexts = ["3D μοντέλο Δίχρονου Πετρελαιοκινητήρα με δυνατότητα πλοήγησης κάμερας και διαδραστική παρουσίασης βασικών εξαρτημάτων", 
+						"3D Μοντέλο Δίχρονου Πετρελαιοκινητήρα, όπου παρουσιάζεται ο τρόπος με τον οποίο ο αέρας εισέρχεται στην μηχανή, φτάνει στον θάλαμο κάυσης και τέλος εξέρχεται από την μηχανή",
+						 "3D μοντέλο Στροβιλοϋπερπληρωτή, όπου μέσω μίας διαδραστικής αποσυναρμολόγησης παρουσιάζονται τα βασικά του εξαρτήματα"];
+
+    function showImage(index) {
+      var image = document.getElementById('carousel-image');
+      image.src = images[index];
+      currentIndex = index;
+      updateBottomContainer(index);
+    }
+
+    function previousImage() {
+      currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+      showImage(currentIndex);
+    }
+
+    function nextImage() {
+      currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+      showImage(currentIndex);
+    }
+
+
+	function updateBottomContainer(index) {
+		var header = document.getElementById('bottom-container-header');
+		var text = document.getElementById('bottom-container-text');
+       	header.innerHTML = dialogHeaders[index];
+        text.innerHTML = dialogTexts[index];
+        
+    }
+  </script>
+</head>
+<body>
+  <div class="top-strip">
+    <!-- Content for the stylized strip on top -->
+    <h1>Διαδραστικά 3D Μοντέλα για Δίχρονο Αργόστροφο Πετρελαιοκινητήρα</h1>
+  </div>
+
+  <div class="main-body">
+    <!-- Content for the main body with gradient background -->
+    <div class="carousel-container">
+      <!-- Content for the carousel selection menu -->
+      <div class="carousel-arrows">
+        <span onclick="previousImage()"><i class="fas fa-chevron-left"></i></span>
+        <span onclick="nextImage()"><i class="fas fa-chevron-right"></i></span>
+      </div>
+      <div class="carousel-image-container">
+        <a href="#" id="image-link">
+          <img id="carousel-image" class="carousel-image" src="image1.jpg" alt="Image 1">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-container">
+    <!-- Content for the bottom container -->
+    <h2 id="bottom-container-header">Βασικά εξαρτήματα Δίχρονου Πετρελαιοκινητήρα</h2>
+    <p id="bottom-container-text">3D μοντέλο Δίχρονου Πετρελαιοκινητήρα με δυνατότητα πλοήγησης κάμερας και διαδραστική παρουσίασης βασικών εξαρτημάτων </p>
+  </div>
+
+  <script>
+    var imageLink = document.getElementById('image-link');
+    imageLink.addEventListener('click', function(event) {
+      event.preventDefault();
+      var link = links[currentIndex];
+      window.open(link, '_blank');
+    });
+  </script>
+</body>
+</html>
