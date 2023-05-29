@@ -100,32 +100,19 @@
       padding: 20px;
       text-align: center;
     }
-
-     /* Mobile Layout */
-    @media (max-width: 768px) {
-      .carousel-container {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .carousel-image {
-        max-height: 40vh;
-        margin-bottom: 10px;
-      }
-    }
   </style>
   <script>
     // JavaScript code for carousel functionality
     var images = ['image1.jpg', 'image2.jpg', 'image3.jpg']; // Replace with your image paths
-    var mobileImages = ['image1_mob.jpg', 'image2_mob.jpg', 'image3_mob.jpg'];
+    var mobileImages = ['image1_mob.jpg', 'image2_mob.jpg', 'image3_mob.jpg']; // Replace with your mobile image paths
     var links = ['https://v3d.net/jtj', 'https://v3d.net/k1b', 'https://v3d.net/ka1']; // Replace with your desired URLs
     var currentIndex = 0;
-	  var dialogHeaders = [ "Βασικά εξαρτήματα Δίχρονου Πετρελαιοκινητήρα", 
-							"Κύκλος Αέρα στην Δίχρονη Πετρελαιομηχανή", 
-							"Στροβιλοϋπερπληρωτής Δίχρονης Πετρελαιομηχανής"];
-	  var dialogTexts = ["3D μοντέλο Δίχρονου Πετρελαιοκινητήρα με δυνατότητα πλοήγησης κάμερας και διαδραστική παρουσίασης βασικών εξαρτημάτων", 
-						"3D Μοντέλο Δίχρονου Πετρελαιοκινητήρα, όπου παρουσιάζεται ο τρόπος με τον οποίο ο αέρας εισέρχεται στην μηχανή, φτάνει στον θάλαμο κάυσης και τέλος εξέρχεται από την μηχανή",
-						 "3D μοντέλο Στροβιλοϋπερπληρωτή, όπου μέσω μίας διαδραστικής αποσυναρμολόγησης παρουσιάζονται τα βασικά του εξαρτήματα"];
+    var dialogHeaders = [ "Βασικά εξαρτήματα Δίχρονου Πετρελαιοκινητήρα", 
+                          "Κύκλος Αέρα στην Δίχρονη Πετρελαιομηχανή", 
+                          "Στροβιλοϋπερπληρωτής Δίχρονης Πετρελαιομηχανής"];
+    var dialogTexts = ["3D μοντέλο Δίχρονου Πετρελαιοκινητήρα με δυνατότητα πλοήγησης κάμερας και διαδραστική παρουσίασης βασικών εξαρτημάτων", 
+                       "3D Μοντέλο Δίχρονου Πετρελαιοκινητήρα, όπου παρουσιάζεται ο τρόπος με τον οποίο ο αέρας εισέρχεται στην μηχανή, φτάνει στον θάλαμο κάυσης και τέλος εξέρχεται από την μηχανή",
+                       "3D μοντέλο Στροβιλοϋπερπληρωτή, όπου μέσω μίας διαδραστικής αποσυναρμολόγησης παρουσιάζονται τα βασικά του εξαρτήματα"];
 
     function showImage(index) {
       var image = document.getElementById('carousel-image');
@@ -135,7 +122,9 @@
         image.src = images[index];
       }
       currentIndex = index;
+      updateBottomContainer(index);
     }
+
     function previousImage() {
       currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
       showImage(currentIndex);
@@ -146,13 +135,11 @@
       showImage(currentIndex);
     }
 
-
-	function updateBottomContainer(index) {
-		var header = document.getElementById('bottom-container-header');
-		var text = document.getElementById('bottom-container-text');
-       	header.innerHTML = dialogHeaders[index];
-        text.innerHTML = dialogTexts[index];
-        
+    function updateBottomContainer(index) {
+      var header = document.getElementById('bottom-container-header');
+      var text = document.getElementById('bottom-container-text');
+      header.innerHTML = dialogHeaders[index];
+      text.innerHTML = dialogTexts[index];
     }
   </script>
 </head>
@@ -181,7 +168,7 @@
   <div class="bottom-container">
     <!-- Content for the bottom container -->
     <h2 id="bottom-container-header">Βασικά εξαρτήματα Δίχρονου Πετρελαιοκινητήρα</h2>
-    <p id="bottom-container-text">3D μοντέλο Δίχρονου Πετρελαιοκινητήρα με δυνατότητα πλοήγησης κάμερας και διαδραστική παρουσίασης βασικών εξαρτημάτων </p>
+    <p id="bottom-container-text">3D μοντέλο Δίχρονου Πετρελαιοκινητήρα με δυνατότητα πλοήγησης κάμερας και διαδραστική παρουσίασης βασικών εξαρτημάτων</p>
   </div>
 
   <script>
@@ -190,6 +177,14 @@
       event.preventDefault();
       var link = links[currentIndex];
       window.open(link, '_blank');
+    });
+
+    // Initial image based on screen width
+    showImage(currentIndex);
+
+    // Update image on window resize
+    window.addEventListener('resize', function() {
+      showImage(currentIndex);
     });
   </script>
 </body>
