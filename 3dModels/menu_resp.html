@@ -136,16 +136,18 @@
   </style>
   <script>
     // JavaScript code for carousel functionality
-    var images = ['image1.jpg', 'image2.jpg', 'image3.jpg']; // Replace with your image paths
-    var mobileImages = ['image1_mob.jpg', 'image2_mob.jpg', 'image3_mob.png']; // Replace with your mobile image paths
-    var links = ['https://v3d.net/jtj', 'https://v3d.net/k1b', 'https://v3d.net/ka1']; // Replace with your desired URLs
+    var images = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg']; // Replace with your image paths
+    var mobileImages = ['image1_mob.jpg', 'image2_mob.jpg', 'image3_mob.png', 'image4_mob.jpg']; // Replace with your mobile image paths
+    var links = ['https://v3d.net/jtj', 'https://v3d.net/k1b', 'https://v3d.net/ka1', 'https://v3d.net/kil']; // Replace with your desired URLs
     var currentIndex = 0;
     var dialogHeaders = [ "Βασικά εξαρτήματα Δίχρονου Πετρελαιοκινητήρα", 
                           "Κύκλος Αέρα στην Δίχρονη Πετρελαιομηχανή", 
-                          "Στροβιλοϋπερπληρωτής Δίχρονης Πετρελαιομηχανής"];
+                          "Στροβιλοϋπερπληρωτής Δίχρονης Πετρελαιομηχανής",
+                          "Κινούμενα εξατρτήματα Δίχρονου Πετρελαιοκινητήρα"];
     var dialogTexts = ["3D μοντέλο Δίχρονου Πετρελαιοκινητήρα με δυνατότητα πλοήγησης κάμερας και διαδραστική παρουσίασης βασικών εξαρτημάτων", 
                        "3D Μοντέλο Δίχρονου Πετρελαιοκινητήρα, όπου παρουσιάζεται ο τρόπος με τον οποίο ο αέρας εισέρχεται στην μηχανή, φτάνει στον θάλαμο κάυσης και τέλος εξέρχεται από την μηχανή",
-                       "3D μοντέλο Στροβιλοϋπερπληρωτή, όπου μέσω μίας διαδραστικής αποσυναρμολόγησης παρουσιάζονται τα βασικά του εξαρτήματα"];
+                       "3D μοντέλο Στροβιλοϋπερπληρωτή, όπου μέσω μίας διαδραστικής αποσυναρμολόγησης παρουσιάζονται τα βασικά του εξαρτήματα",
+                       "3D μοντέλο Δίχρονου Πετρελαιοκινητήρα, όπου γίνεται διεξοδική παρουσίαση όλων των κινούμενων μερών του κινητήρα. Κατά την διάρκεια της παρουσίασης γίνεται διαδραστική συναρμολόγηση των εξαρτημάτων "];
 
     function showImage(index) {
       var image = document.getElementById('carousel-image');
