@@ -25,7 +25,7 @@
   </head>
   <body>
     <button type="button" class="d-lg-none mobile-toggle" onclick="mymobnav()"  >
-      <i class="bi bi-list  " ></i>  
+      <i class="bi bi-list" ></i>  
     </button>
   
   <!-- ======= Header ======= -->
@@ -139,8 +139,8 @@
         <div class="col-lg-6">
           <h3 class="resume-title">Sumary</h3>
           <div class="resume-item pb-0">
-            <h4>Brandon Johnson</h4>
-            <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+            <h4>Konstantinos</h4>
+            <p><em>Physist and Production Engineerer, </em></p>
             <ul>
               <li>Portland par 127,Orlando, FL</li>
               <li>(123) 456-7891</li>
@@ -201,7 +201,11 @@
       duration: 1000,
       easing: 'ease-in-out',
       once: false,
-      mirror: false
+      mirror: false,
+      disable: function() {
+        var maxWidth = 800;
+        return window.innerWidth < maxWidth;
+      }
     });</script>
     <!-- Import typed.min.js file from typed.js folder -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
