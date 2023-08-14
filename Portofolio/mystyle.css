@@ -14,6 +14,7 @@ body{
     transition: all 0.5s;
     padding: 15px;
     overflow-y: auto;
+
   }
   
   @media (max-width: 991px) {
@@ -21,9 +22,26 @@ body{
       width: 300px;
       background: #fff;
       border-right: 1px solid #e6e9ec;
+      transition: 0.5s;
       left: -300px;
     }
   }
+
+  .mobile-toggle {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 9999;
+    font-size: 20px;
+    transition: all 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 5px;
+    border: solid black;
+    background-color: white;
+  }
+
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -195,6 +213,14 @@ animation-fill-mode: forwards;
   position: relative;
   margin-left: 20vw;
   margin-top: 20vh;
+  width: 80vw;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(235, 14, 14));
+}
+
+#resume{
+  position: relative;
+  margin-left: 20vw;
+  margin-top: 10vh;
   width: 80vw;
   background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(235, 14, 14));
 }
