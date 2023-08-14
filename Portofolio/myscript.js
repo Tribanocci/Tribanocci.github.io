@@ -14,5 +14,8 @@ function mymobnav(){
             is_hidden = true;
         }
     }
+    else{
+        document.getElementById('header').style.left = '0';
+    }
     
 }

@@ -29,10 +29,10 @@ body{
 
   .mobile-toggle {
     position: fixed;
-    right: 10px;
-    top: 10px;
+    right: 20px;
+    top: 20px;
     z-index: 9999;
-    font-size: 20px;
+    font-size: 50px;
     transition: all 0.4s;
     cursor: pointer;
     border-radius: 10px;
@@ -140,23 +140,38 @@ body{
   }
 
 #profile_pic{
-    
-    
     display: block;
     width: 300px;
     height: auto;
     border-style: solid;
     border-width: medium;
-    border-radius: 300px;
+    border-radius: 150px;
     border-color: rgb(255, 255, 255);
     box-shadow: 5px 10px 8px #ee0000;
     margin-top: 10px;
     margin-bottom: 10px;
-    
     position: relative;
-    
     animation-name: in-move;
     animation-duration: 3s;
+}
+
+
+@media (max-width: 991px) {
+  #profile_pic {
+    display: block;
+    width: 150px;
+    height: auto;
+    border-style: solid;
+    border-width: medium;
+    border-radius: 75px;
+    border-color: rgb(255, 255, 255);
+    box-shadow: 5px 10px 8px #ee0000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    animation-name: in-move;
+    animation-duration: 3s;
+  }
 }
 
 @keyframes in-move {
@@ -171,8 +186,6 @@ body{
 
 
 .scroll_backgr{
- 
-  
   width: 80%;
   margin-left: 20%;
   margin-top: 5vh;
@@ -185,6 +198,20 @@ body{
   animation-fill-mode: forwards;
 }
 
+@media (max-width: 991px) {
+  .scroll_backgr {
+    width: 80%;
+    margin-left: 20%;
+    margin-top: 5vh;
+    height: 200px;
+    position: relative;
+    opacity: 0;
+    animation-name: in-move;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+  }
+}
 
 
 .mask-scroll{
@@ -200,12 +227,30 @@ animation-duration: 4s;
 animation-iteration-count: 5;
 animation-fill-mode: forwards;
 }
+
+@media (max-width: 991px) {
+  .mask-scroll {
+    background-image: url(img/ScrollDown_v2.png);
+    height: 200px;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    background-size: contain;
+    
+    animation-name: scroll-move;
+    animation-duration: 4s;
+    animation-iteration-count: 5;
+    animation-fill-mode: forwards;
+  }
+}
 /* The animation code */
 @keyframes scroll-move {
   0%   {left:0px; top:0px;}
   50%  { left:-10px; top:0px;}
   100% {left:0px; top:0px;}
 }
+
+
 
 /*-----about-----------*/
 
