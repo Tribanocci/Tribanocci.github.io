@@ -15,7 +15,7 @@ function mymobnav(){
         }
     }
     else{
-        document.getElementById('header').style.left = '0';
+        document.getElementById('header').style.left = '1px';
     }
     
 }
