@@ -19,11 +19,11 @@ body{
   
   @media (max-width: 991px) {
     #header {
-      width: 300px;
+      width: 200px;
       background: #fff;
       border-right: 1px solid #e6e9ec;
       transition: 0.5s;
-      left: -300px;
+      left: -200px;
     }
   }
 
@@ -39,6 +39,7 @@ body{
     padding: 5px;
     border: solid black;
     background-color: white;
+
   }
 
 
