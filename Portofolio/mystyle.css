@@ -190,7 +190,7 @@ body{
   width: 80%;
   margin-left: 20%;
   margin-top: 5vh;
-  height: 500px;
+  height: 400px;
   position: relative;
   opacity: 0;
   animation-name: in-move;
@@ -217,7 +217,7 @@ body{
 
 .mask-scroll{
 background-image: url(img/ScrollDown_v2.png);
-height: 500px;
+height: 400px;
 width: 100%;
 z-index: 0;
 position: absolute;
