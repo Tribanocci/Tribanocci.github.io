@@ -263,10 +263,31 @@ animation-fill-mode: forwards;
   background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(235, 14, 14));
 }
 
+/*---resume----*/
+
 #resume{
   position: relative;
   margin-left: 20vw;
   margin-top: 10vh;
   width: 80vw;
   background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(235, 14, 14));
+}
+
+#resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #bb0505;
+  position: relative;
+}
+
+#resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #bb0505;
 }
