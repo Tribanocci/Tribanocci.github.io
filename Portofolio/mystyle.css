@@ -291,3 +291,12 @@ animation-fill-mode: forwards;
   background: #fff;
   border: 2px solid #bb0505;
 }
+
+/*---Portofolio--*/
+#portofolio{
+  position: relative;
+  margin-left: 20vw;
+  margin-top: 10vh;
+  width: 80vw;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(235, 14, 14));
+}
