@@ -293,10 +293,18 @@ animation-fill-mode: forwards;
 }
 
 /*---Portofolio--*/
-#portofolio{
+#portfolio{
   position: relative;
   margin-left: 20vw;
   margin-top: 10vh;
   width: 80vw;
   background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(235, 14, 14));
+
+}
+
+.project-card{
+  border-style:double;
+  border-width: 5px;
+  border-radius: 20px;
+  border-color: azure;
 }
