@@ -298,7 +298,7 @@ animation-fill-mode: forwards;
   margin-left: 20vw;
   margin-top: 10vh;
   width: 80vw;
-  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(235, 14, 14));
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(255, 42, 42));
 
 }
 
@@ -307,4 +307,28 @@ animation-fill-mode: forwards;
   border-width: 5px;
   border-radius: 20px;
   border-color: azure;
+  max-width: 500px;
+  padding: 0;
+  
+}
+
+.project-card:hover{
+  transition: 0.5s;
+  transform: scale(1.05);
+  box-shadow: 10px 5px rgb(172, 0, 0);
+  cursor: pointer;
+}
+
+.project-card-details{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.425), rgba(255, 159, 159, 0.403));
+}
+
+.project-card:hover>.project-card-details{
+  display: block;
 }
