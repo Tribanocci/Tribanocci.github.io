@@ -427,3 +427,18 @@ animation-fill-mode: forwards;
   background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(255, 42, 42));
 
 }
+
+footer{
+  position: relative;
+  margin-left: 20vw;
+  margin-top: 5vh;
+  width: 80vw;
+  background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(165, 165, 165));
+  text-align: center;
+}
+
+.copyright{
+  border-style: inset none none none;
+  border-color: #c2c2c2;
+  margin-left: 15px;
+}
