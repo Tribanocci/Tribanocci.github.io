@@ -10,7 +10,7 @@ body{
     top: 0;
     left: 0;
     bottom: 0;
-    z-index: 9997;
+    z-index: 9990;
     transition: all 0.5s;
     padding: 15px;
     overflow-y: auto;
@@ -31,7 +31,7 @@ body{
     position: fixed;
     right: 20px;
     top: 20px;
-    z-index: 9999;
+    z-index: 9990;
     font-size: 50px;
     transition: all 0.4s;
     cursor: pointer;
@@ -297,6 +297,7 @@ animation-fill-mode: forwards;
   position: relative;
   margin-left: 20vw;
   margin-top: 10vh;
+  padding-bottom: 20px;
   width: 80vw;
   background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(255, 42, 42));
 
@@ -387,4 +388,42 @@ animation-fill-mode: forwards;
 .button-detail:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+/*MODALS*/
+
+.modal-dialog{
+  max-width: 80vw;
+  z-index: 9999;
+}
+
+.modal-body img{
+  object-fit: scale-down;
+}
+
+.modal-footer a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.modal-footer a:hover{
+  color: #fff;
+  text-decoration: underline;
+}
+
+.modal-detail-header{
+  text-align: center;
+  border-bottom-style: inset ;
+}
+
+
+/*----Conctact----*/
+
+#contact{
+  position: relative;
+  margin-left: 20vw;
+  margin-top: 10vh;
+  width: 80vw;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(255, 42, 42));
+
 }
