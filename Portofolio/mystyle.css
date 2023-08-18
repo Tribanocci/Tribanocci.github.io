@@ -424,8 +424,22 @@ animation-fill-mode: forwards;
   margin-left: 20vw;
   margin-top: 10vh;
   width: 80vw;
-  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(255, 42, 42));
+  background-image: linear-gradient(to bottom, rgb(196, 196, 196), rgb(255, 255, 255));
 
+}
+
+#contact i{
+  background-color: #fff;
+  font-size:1.8rem;
+  color: #c2c2c2;
+  border: solid;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+#message-box{
+  width: 300px;
+  height: 200px;
 }
 
 footer{

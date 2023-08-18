@@ -405,19 +405,60 @@
             <h1>CONTACT</h1>
         </div>
       </div>
+      <div class="row flex-row">
+        <div class="col-4 mt-3">
+          <img src="img/office.png" class="img-fluid">
+          <div class="row">
+            <div class="col-3 mt-3">
+              <i class="bi bi-geo-alt"></i>
+            </div>
+            <div class="col-8 mt-2">
+              <h5>Address:</h5>
+              <p>G.Papandreou, Chania, Greece</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3 mt-3">
+              <i class="bi bi-envelope"></i>
+            </div>
+            <div class="col-8 mt-2">
+              <h5>Email:</h5>
+              <p>kostakitsan@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 pl-3 ms-auto">
+          <h3> Send me a Message</h3>
+          <form action="https://formspree.io/f/maygoyng" method="POST">
+            <div class="row mt-5 ms-auto">
+              <div class="col-6 ">
+                <label>
+                  Your email:
+                  <input type="email" name="email" placeholder="Email">
+                </label>
+              </div>
+              <div class="col-6">
+                <label>
+                  Subject:
+                  <input name="subject" placeholder="Hello" />
+                </label>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <label>
+                Your message:
+                <textarea name="message" id="message-box"></textarea>
+              </label>
+            </div>
+  
+            <!-- your other form fields go here -->
+            <button type="submit" class="btn btn-danger">Send</button>
+          </form>
+        </div>
+
+      </div>
       <!-- modify this form HTML and place wherever you want your form -->
-      <form action="https://formspree.io/f/maygoyng" method="POST">
-        <label>
-          Your email:
-          <input type="email" name="email">
-        </label>
-        <label>
-          Your message:
-          <textarea name="message"></textarea>
-        </label>
-        <!-- your other form fields go here -->
-        <button type="submit">Send</button>
-      </form>
+
     </div>
   </section>
 
@@ -446,6 +487,7 @@
       easing: 'ease-in-out',
       once: false,
       mirror: false,
+      disable: 'mobile',
 
       
     });</script>
