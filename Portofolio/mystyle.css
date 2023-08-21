@@ -1,5 +1,6 @@
-body{
-  overflow-x: hidden;
+html,body{
+  overflow-x:hidden;
+
 }
 
 /*--------------------------------------------------------------
@@ -176,8 +177,8 @@ body{
 }
 
 @keyframes in-move {
-    0%   {opacity: 0.0; left:500px; top:0px;}
-    100% {opacity: 1;left:0px; top:0px;}
+    0%   {opacity: 0.0; left:200%; top:0px;}
+    100% {opacity: 1;left:0; top:0;}
   }
 
 
@@ -197,6 +198,7 @@ body{
   animation-duration: 5s;
   animation-delay: 3s;
   animation-fill-mode: forwards;
+
 }
 
 @media (max-width: 991px) {
@@ -206,11 +208,7 @@ body{
     margin-top: 5vh;
     height: 200px;
     position: relative;
-    opacity: 0;
-    animation-name: in-move;
-    animation-duration: 5s;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
+
   }
 }
 
@@ -221,12 +219,11 @@ height: 400px;
 width: 100%;
 z-index: 0;
 position: absolute;
+top:0;
+left:0;
 background-size: contain;
 
-animation-name: scroll-move;
-animation-duration: 4s;
-animation-iteration-count: 5;
-animation-fill-mode: forwards;
+
 }
 
 @media (max-width: 991px) {
@@ -236,6 +233,8 @@ animation-fill-mode: forwards;
     width: 100%;
     z-index: 0;
     position: absolute;
+    top:0;
+    left:0;
     background-size: contain;
     
 
