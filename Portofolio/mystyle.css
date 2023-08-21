@@ -238,10 +238,7 @@ animation-fill-mode: forwards;
     position: absolute;
     background-size: contain;
     
-    animation-name: scroll-move;
-    animation-duration: 4s;
-    animation-iteration-count: 5;
-    animation-fill-mode: forwards;
+
   }
 }
 /* The animation code */
