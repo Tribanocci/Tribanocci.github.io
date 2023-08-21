@@ -437,6 +437,13 @@ animation-fill-mode: forwards;
   padding: 8px;
 }
 
+.contact-info{
+  
+  background-image: url('img/office.png');
+  background-size: cover;
+  justify-content: center;
+}
+
 #message-box{
   width: 300px;
   height: 200px;
