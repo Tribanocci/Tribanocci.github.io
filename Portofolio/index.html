@@ -430,17 +430,25 @@
         <div class="col pl-3 ms-auto my-5">
           <h3> Send me a Message</h3>
           <form action="https://formspree.io/f/maygoyng" method="POST">
-            <div class="row mt-5 ms-auto">
-              <div class="col-6 ">
+            <div class="row row-cols-1 row-cols-md-2">
+              <div class="col my-4 my-md-0">
                 <label>
-                  Your email:
-                  <input type="email" name="email" placeholder="Email">
+                  <div class="row">
+                    <p>Your email:</p>
+                  </div>
+                  <div class="row">
+                    <input type="email" name="email" placeholder="Email">
+                  </div>
                 </label>
               </div>
-              <div class="col-6">
+              <div class="col">
                 <label>
-                  Subject:
-                  <input name="subject" placeholder="Hello" />
+                  <div class="row">
+                    <p>Subject:</p>
+                  </div>
+                  <div class="row">
+                    <input name="subject" placeholder="Hello" />
+                  </div>
                 </label>
               </div>
             </div>
