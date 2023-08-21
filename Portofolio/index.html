@@ -240,8 +240,8 @@
         </div>
       </div>
 
-      <div class="row mt-5">
-        <div class="col-6">
+      <div class="row row-cols-1 row-cols-md-2 mt-5">
+        <div class="col my-3">
           <div class="container project-card">
             <img src="img/proj_1_inside.png" class="img-fluid" style="border-radius: 15px;">
             <div class="project-card-details">
@@ -250,7 +250,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 ">
+        <div class="col my-3">
           <div class="container project-card">
             <img src="img/proj_2_inside.png" class="img-fluid" style="border-radius: 15px;">
             <div class="project-card-details">
@@ -259,10 +259,7 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="row mt-4">
-        <div class="col-6">
+        <div class="col my-3">
           <div class="container project-card">
             <img src="img/proj_3_detail.png" class="img-fluid" style="border-radius: 15px;">
             <div class="project-card-details">
@@ -271,7 +268,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 ">
+        <div class="col my-3">
           <div class="container project-card">
             <img src="img/proj_2_inside.png" class="img-fluid" style="border-radius: 15px;">
             <div class="project-card-details">
@@ -281,7 +278,8 @@
           </div>
         </div>
       </div>
-      
+
+
     </div>
     <!--Modals-->
     <div class="modal " id="modal-1">
@@ -338,10 +336,10 @@
                   <h5>Interactive App</h5>
                 </div>
                 <div class="row">
-                  <p>This app integrates an interactive 3D model of a Marine Diesel Engine, designed primarily for educational purposes.</p>
+                  <p>This app, designed primarily for educational purposes, exhibits how the RADAR interpretes relative motion.</p>
                   <p>The development process of the app involved the following steps.</p>
                   <ul>
-                    <li>Creation of 3D Model for the Diesel Engine using CAD Software</li>
+                    <li>Creation of 3D Models for the ships and the 3D enviromen using Blender.</li>
                     <li>Crafting interactive animations and functionalities, along with integrating materials and scenes using Blender.</li>
                     <li>The export of the 3D scene and objects was accomplished through the <i>THREE.js</i> library. The implementation of the web form involved JavaScript functions, alongside foundational HTML and CSS code.</li>
                   </ul>
@@ -405,29 +403,31 @@
             <h1>CONTACT</h1>
         </div>
       </div>
-      <div class="row flex-row">
-        <div class="col-4 mt-3 contact-info d-flex flex-column ">
-          <!--<img src="img/office.png" class="img-fluid">-->
-          <div class="row " style="background-color: rgba(90, 90, 90, 0.486); color: white;">
-            <div class="col-3 mt-3">
-              <i class="bi bi-geo-alt"></i>
+      <div class="row row-cols-1 row-cols-md-2">
+        <div class="col ">
+          <div class="col-9 h-100 contact-info mt-3   d-flex flex-column ">
+            <!--<img src="img/office.png" class="img-fluid">-->
+            <div class="row g-0" style="background-color: rgba(90, 90, 90, 0.486); color: white;">
+              <div class="col-3 ms-3 mt-3">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="col-8 mt-2">
+                <h5>Address:</h5>
+                <p>G.Papandreou, Chania, Greece</p>
+              </div>
             </div>
-            <div class="col-8 mt-2">
-              <h5>Address:</h5>
-              <p>G.Papandreou, Chania, Greece</p>
-            </div>
-          </div>
-          <div class="row" style="background-color: rgba(90, 90, 90, 0.486); color: white;">
-            <div class="col-3 mt-3">
-              <i class="bi bi-envelope"></i>
-            </div>
-            <div class="col-8 mt-2">
-              <h5>Email:</h5>
-              <p>kostakitsan@gmail.com</p>
+            <div class="row g-0" style="background-color: rgba(90, 90, 90, 0.486); color: white;">
+              <div class="col-3 mt-3 ms-3">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div class="col-8 mt-2">
+                <h5>Email:</h5>
+                <p>kostakitsan@gmail.com</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-6 pl-3 ms-auto">
+        <div class="col pl-3 ms-auto">
           <h3> Send me a Message</h3>
           <form action="https://formspree.io/f/maygoyng" method="POST">
             <div class="row mt-5 ms-auto">
