@@ -1,3 +1,8 @@
+:root {
+  --containercolor: #5e5e5ecf;
+  
+}
+
 html,body{
   overflow-x:hidden;
 
@@ -115,7 +120,7 @@ html,body{
   .nav-menu .active:focus,
   .nav-menu li:hover>a {
     color: #fff;
-    background: #bb1d05;
+    background: var(--containercolor);
   }
   
   
@@ -138,7 +143,7 @@ html,body{
     margin-left: 20vw;
     margin-top: 20vh;
     width: 80vw;
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(235, 14, 14));
+    background-image: linear-gradient(to right, rgba(255,0,0,0), var(--containercolor));
   }
   @media (max-width: 991px) {
     #hero{
@@ -146,7 +151,7 @@ html,body{
       margin-left: 10vw;
       margin-top: 20vh;
       width: 90vw;
-      background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(235, 14, 14));
+      background-image: linear-gradient(to right, rgba(255,0,0,0), var(--containercolor));
     }
 
   }
@@ -265,7 +270,7 @@ background-size: contain;
   margin-left: 20vw;
   margin-top: 20vh;
   width: 80vw;
-  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(235, 14, 14));
+  background-image: linear-gradient(to right, rgba(255,0,0,0),var(--containercolor));
 }
 
 @media (max-width: 991px){
@@ -274,7 +279,7 @@ background-size: contain;
     margin-left: 10vw;
     margin-top: 20vh;
     width: 90vw;
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(235, 14, 14));
+    background-image: linear-gradient(to right, rgba(255,0,0,0),var(--containercolor));
   }
 }
 /*---resume----*/
@@ -284,7 +289,7 @@ background-size: contain;
   margin-left: 20vw;
   margin-top: 10vh;
   width: 80vw;
-  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(235, 14, 14));
+  background-image: linear-gradient(to right, rgba(255,0,0,0), var(--containercolor));
 }
 
 #resume .resume-item {
@@ -313,7 +318,7 @@ background-size: contain;
   margin-top: 10vh;
   padding-bottom: 20px;
   width: 80vw;
-  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(255, 42, 42));
+  background-image: linear-gradient(to right, rgba(255,0,0,0), var(--containercolor));
 
 }
 
