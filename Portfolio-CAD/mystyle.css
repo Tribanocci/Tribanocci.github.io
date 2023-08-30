@@ -1,5 +1,6 @@
 :root {
   --containercolor: #5e5e5ecf;
+  --shadowcolor: #292828cf;
   
 }
 
@@ -163,7 +164,7 @@ html,body{
     border-width: medium;
     border-radius: 150px;
     border-color: rgb(255, 255, 255);
-    box-shadow: 5px 10px 8px #ee0000;
+    box-shadow: 5px 10px 8px var(--shadowcolor);
     margin-top: 10px;
     margin-bottom: 10px;
     position: relative;
@@ -181,7 +182,7 @@ html,body{
     border-width: medium;
     border-radius: 75px;
     border-color: rgb(255, 255, 255);
-    box-shadow: 5px 10px 8px #ee0000;
+    box-shadow: 5px 10px 8px var(--shadowcolor);
     margin-top: 10px;
     margin-bottom: 10px;
     position: relative;
@@ -295,7 +296,7 @@ background-size: contain;
 #resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #bb0505;
+  border-left: 2px solid var(--shadowcolor);
   position: relative;
 }
 
@@ -308,7 +309,7 @@ background-size: contain;
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #bb0505;
+  border: 2px solid var(--shadowcolor);
 }
 
 /*---Portofolio--*/
@@ -335,7 +336,7 @@ background-size: contain;
 .project-card:hover{
   transition: 0.5s;
   transform: scale(1.05);
-  box-shadow: 10px 5px rgb(172, 0, 0);
+  box-shadow: 10px 5px var(--shadowcolor);
   
 }
 
