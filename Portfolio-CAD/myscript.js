@@ -26,3 +26,15 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 });
+
+
+
+$(document).ready(function () {
+    $('.thumbnail').click(function () {
+      $('.thumbnail').removeClass('active-thumbnail');
+      $(this).addClass('active-thumbnail');
+      
+      var mainImageSrc = $(this).data('main-image');
+      $('#mainImage').attr('src', mainImageSrc);
+    });
+  });

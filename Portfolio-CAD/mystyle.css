@@ -320,11 +320,12 @@ background-size: contain;
   padding-bottom: 20px;
   width: 80vw;
   background-image: linear-gradient(to right, rgba(255,0,0,0), var(--containercolor));
+  display: flex;
 
 }
 
 .project-card{
-  border-style:double;
+  border-style:solid;
   border-width: 5px;
   border-radius: 20px;
   border-color: azure;
@@ -506,3 +507,71 @@ footer{
   border-color: #c2c2c2;
   margin-left: 15px;
 }
+
+
+/*-----project----*/
+
+.active-thumbnail {
+  border: 3px solid #007bff; /* Change color as needed */
+}
+
+.thumbnail {
+  width: 100%;
+  
+  background-size: cover;
+  background-position: center top;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05); /* Increase scale on hover */
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.459); /* Adding a subtle shadow on hover */
+}
+.main-image{
+  position: relative;
+  border: 4px solid #e2e2e2;
+  padding: 0;
+}
+
+.ctr-panel{
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(63, 63, 63, 0.596));
+}
+
+.ctr-panel:hover{
+  transition: opacity 0.5s;
+  opacity: 1;
+ 
+}
+
+.ctr-panel button{
+  background-color: white;
+  border: #45505b solid;
+  color: #45505b;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.ctr-panel i{
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+}
+
+.modal iframe{
+  height: 85vh;
+  width: 100%;
+}
+
