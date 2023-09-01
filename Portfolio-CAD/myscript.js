@@ -35,6 +35,9 @@ $(document).ready(function () {
       $(this).addClass('active-thumbnail');
       
       var mainImageSrc = $(this).data('main-image');
-      $('#mainImage').attr('src', mainImageSrc);
+      var mainImageID = $(this).data('main-image-id');
+      var mainImageSelector = $('#' + mainImageID);
+      console.log(mainImageSrc, mainImageID);
+     mainImageSelector.attr('src', mainImageSrc);
     });
   });
