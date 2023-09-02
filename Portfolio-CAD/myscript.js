@@ -31,13 +31,24 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $('.thumbnail').click(function () {
-      $('.thumbnail').removeClass('active-thumbnail');
-      $(this).addClass('active-thumbnail');
-      
-      var mainImageSrc = $(this).data('main-image');
-      var mainImageID = $(this).data('main-image-id');
-      var mainImageSelector = $('#' + mainImageID);
-      console.log(mainImageSrc, mainImageID);
-     mainImageSelector.attr('src', mainImageSrc);
+        $('.thumbnail').removeClass('active-thumbnail');
+        $(this).addClass('active-thumbnail');
+      // Check if the 'data-main-image' attribute exists in the clicked thumbnail
+      if ($(this).data('main-image')) {
+        console.log('einai');
+        // Get the 'data-main-image' and 'data-main-image-id' attributes from the clicked thumbnail
+        var mainImageSrc = $(this).data('main-image');
+        var mainImageID = $(this).data('main-image-id');
+        
+        // Update the 'src' attribute of the main image using the 'mainImageID' selector
+        $('#' + mainImageID).attr('src', mainImageSrc);
+      } else{
+        
+        var prefix = "//sharecad.org/cadframe/load?url=konstantinos.pythonanywhere.com/static/photos/";
+        var filename = $(this).data('filename');
+        console.log(prefix + filename);
+      }
+       
     });
   });
+  
