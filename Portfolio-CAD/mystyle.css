@@ -580,3 +580,13 @@ footer{
   height: 80vh;
   width: 100%;
 }
+
+.row.masonry {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.col.masonry-item {
+  flex: 1;
+  margin: 5px; /* Add margins between items as needed */
+}
