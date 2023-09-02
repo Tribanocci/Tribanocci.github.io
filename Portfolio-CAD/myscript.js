@@ -31,8 +31,15 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $('.thumbnail').click(function () {
-        $('.thumbnail').removeClass('active-thumbnail');
-        $(this).addClass('active-thumbnail');
+    // Find the common parent (the row) of the clicked thumbnail
+    var row = $(this).closest('.row');
+    
+    // Select all .thumbnail elements within the same row
+    var thumbnailsInRow = row.find('.thumbnail');
+    
+    // Now, you can work with the thumbnailsInRow as needed
+    thumbnailsInRow.removeClass('active-thumbnail');
+    $(this).addClass('active-thumbnail');
       // Check if the 'data-main-image' attribute exists in the clicked thumbnail
       if ($(this).data('main-image')) {
         console.log('einai');
