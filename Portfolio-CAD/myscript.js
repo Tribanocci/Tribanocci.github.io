@@ -47,6 +47,8 @@ $(document).ready(function () {
         var prefix = "//sharecad.org/cadframe/load?url=konstantinos.pythonanywhere.com/static/photos/";
         var filename = $(this).data('filename');
         console.log(prefix + filename);
+        var i_url = prefix + filename
+        $('#cadFrame').attr('src', i_url);
       }
        
     });
