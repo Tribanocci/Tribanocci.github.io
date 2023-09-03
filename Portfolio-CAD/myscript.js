@@ -69,3 +69,10 @@ $(document).ready(function () {
     });
   });
   
+
+  $(document).ready(function () {
+    $('.bx-zoom-in').click(function () {
+            console.log('zooooom');
+       
+    });
+  });
