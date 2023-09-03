@@ -28,6 +28,14 @@ $(document).ready(function () {
 });
 
 
+/*------GEAR------------*/
+var gear1 = document.querySelector(".gear1").style;
+    gear2 = document.querySelector(".gear2").style;
+window.onscroll = function rotateGear () {
+  gear1.transform = "rotate(" + (window.scrollY * 2.5) + "deg)";
+  gear2.transform = "rotate(-" + (window.scrollY * 2.5) + "deg)";
+}
+
 
 $(document).ready(function () {
     $('.thumbnail').click(function () {
