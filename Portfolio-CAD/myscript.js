@@ -81,11 +81,9 @@ $(document).ready(function () {
 const queryString = window.location.search;
 console.log('test', queryString);
 const urlParams = new URLSearchParams(queryString);
-console.log(urlParams.has('pdf'));
+
 $(document).ready(function () {
   if(urlParams.has('pdf')){
     $('#lightboxModal4').modal('show');
-
-    console.log('kala paei')
   }
 });
