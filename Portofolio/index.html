@@ -97,8 +97,8 @@
 						<h5 class="card-header text-center">C++ Developed</h5>				
 						<img class="card-img-top" src="img/dev.jpg" alt="Card image cap" >
 						<div class="card-body">
-							<p class="card-text">I am an experienced C++ user, familiar with the OOP paradigm</p>
-              <p class="card-text">Check my Window App, which implements a Queuing System Simulation </p>
+							<p class="card-text">I am an experienced C++ developer, familiar with the OOP paradigm.</p>
+              <p class="card-text">Check my Window Application, which implements a Queuing System Simulation. The simulation algorithm is written in C++ and the widgets and window app is written in C#. </p>
               <a href="https://github.com/Tribanocci/Simulation_Queuing_Systems_App/blob/master/README.md" class="btn btn-danger">Queuing_Sim_App</a>
 							
 						</div>
@@ -137,7 +137,7 @@
 
       <div class="row row-cols-1 row-cols-md-2">
         <div class="col-lg-6">
-          <h3 class="resume-title">Sumary</h3>
+          <h3 class="resume-title">Summary</h3>
           <div class="resume-item pb-0">
             <h4>Konstantinos</h4>
             <p><em>Physist and Production Engineerer, I currently work as a Freelancer, offering services related to CAD Design, 3D Modeling and Web-App Development. </em></p>
@@ -207,25 +207,28 @@
               </ul>
           </div>
           <div class="resume-item">
-            <div class="row ">
-              <div class="col-8 d-flex flex-column justify-content-between">
-                <div class="row">
-                  <h4>Math and Physics Tutor</h4>
-                  <h5>2018 - Present</h5>
+            <div class="resume-item">
+              <div class="row ">
+                <div class="col-8 d-flex flex-column justify-content-between">
+                  <div class="row">
+                    <h4>CAD and Product Designer</h4>
+                    <h5>2020 - Present</h5>
+                  </div>
+                  <div class="row">
+                    <p><em>Self-Employed, Chania, Greece</em></p>
+                  </div>
                 </div>
-                <div class="row">
-                  <p><em>Self-Employed, Chania, Greece</em></p>
+                <div class="col-4">
+                  <img class="img-fluid" src="img/tutor.svg" style="max-height: 150px;">
                 </div>
               </div>
-              <div class="col-4">
-                <img class="img-fluid" src="img/tutor.svg" style="max-height: 150px;">
-              </div>
+                <p>In my Family Workshop, we desiner and manufacture custom Agricultural Machinery</p>
+                <ul>
+                  <li>Providing product solutions for agricultural machinery.</li>
+                  <li>Designing the custom agricultural machinery in CAD software for purposes of Prototyping and Testing.</li>
+                </ul>
             </div>
-              <ul>
-                <li>Providing comprehensive tutoring for all subjects related to Math and Physics.</li>
-                <li>Offering tutoring services at an academic level and beyond</li>
-              </ul>
-          </div>
+          
         </div>
       </div>
 
@@ -236,7 +239,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col d-flex flex-column " >
-            <h1>PORTOFOLIO</h1>
+            <h1>PORTFOLIO</h1>
         </div>
       </div>
 
@@ -274,6 +277,15 @@
             <div class="project-card-details">
               <h4>Web-App</h4>
               <button class="button-detail" data-bs-toggle="modal" data-bs-target="#modal-4"><span>Details</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="col my-3">
+          <div class="container project-card">
+            <img src="img/proj_5_detail.png" class="img-fluid" style="border-radius: 15px;">
+            <div class="project-card-details">
+              <h4>Web-App</h4>
+              <button class="button-detail" data-bs-toggle="modal" data-bs-target="#modal-5"><span>Details</span></button>
             </div>
           </div>
         </div>
@@ -431,6 +443,45 @@
         </div>
       </div>
     </div><!--modal----4-->
+
+    <div class="modal " id="modal-4">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Web-App (Flask)</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row d-block d-md-flex">
+              <div class="col-12 col-md-6 ">
+                <img src="img/proj_5_inside.png" class="img-fluid">
+              </div>
+              <div class="col-12 col-md-6 me-auto">
+                <div class="row modal-detail-header" >
+                  <h5>Web-Based stock policy simulation Interface</h5>
+                </div>
+                <div class="row">
+                  <p>This simple HTML form enables the user to select a stock timeseries and simulate the results in terms of profit when a simple buy/sell policy is implemented.</p>
+                  <p>The development process of the Web-App was made using <i>FLASK framework</i> and included the following.</p>
+                  <ul>
+                    <li>Creation of the script that implements the buy/sell policy in <i>PYTHON</i>.</li>
+                    <li>The creation of the HTML form for enabling the user to input the necessary data into the script. </li>
+                    <li>In order for the script to run every time the input data is given <i>(Server-Side Processing)</i>, a backend Python script was written (Flask framework).</li>
+                    <li>Finally, the web-App was deployed in a web server and a virtual enviroment was built for the installation of the necessary modules.</li>
+                  </ul>
+                  <p>You can use the App, by click the button below.</p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-danger"><a href="http://konstantinos2.pythonanywhere.com/" target="_blank">Open Web-App</a></button>
+          </div>
+        </div>
+      </div>
+    </div><!--modal----5-->
 
 
   </section>
