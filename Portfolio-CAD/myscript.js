@@ -87,3 +87,11 @@ $(document).ready(function () {
     $('#lightboxModal4').modal('show');
   }
 });
+
+//IFRAME LOADERS (add src dynamically, when button clicked)
+
+//Bedplate
+document.getElementById('bedplate_iframe').addEventListener('click', function() {
+  var iframe = document.getElementById('lightboxIframe1');
+  iframe.src = 'https://v3d.net/rbs';
+});
