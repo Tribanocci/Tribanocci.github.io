@@ -20,6 +20,17 @@ function mymobnav(){
     
 }
 
+
+const queryString = window.location.search;
+console.log('test', queryString);
+const urlParams = new URLSearchParams(queryString);
+
+$(document).ready(function () {
+  if(urlParams.has('engine')){
+    $('#modal-1').modal('show');
+  }
+});
+
 $(document).ready(function () {
     $('.nav-link').click(function () {
         $('.nav-link').removeClass('active');
