@@ -6,32 +6,32 @@
 
 	<head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZE8X46B72"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZE8X46B72"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'G-5ZE8X46B72');
+		</script>
 
-  gtag('config', 'G-5ZE8X46B72');
-</script>
-
-	
 		<title>ΜΗΧΑΝΟΥΡΓΕΙΟ - ΦΥΤΙΛΗΣ ΚΩΝ/ΝΟΣ</title>
 		<meta charset="UTF-8">
-		
-		
+
 		<!--  Bootstrap 5 is Mobile first  -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--search engines-->
-		 <meta name="description" content="Μηχανουργείο, επισκευές, κατασκευές, άξονες, Χανιά, μαρκούτσια">
-    <!--  Latest compiled and minified CSS  -->
-		 <link href="mystyle.css" rel="stylesheet"><!---diko m external css---->
+		<!-- EmailJS SDK -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+		<!-- Uploadcare Widget -->
+		<script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+		<!--search engines-->
+		<meta name="description" content="Μηχανουργείο, επισκευές, κατασκευές, άξονες, Χανιά, μαρκούτσια, Plasma, CNC Plasma, κοπή">
+		<!--  Latest compiled and minified CSS  -->
+		<link href="mystyle.css" rel="stylesheet"><!---diko m external css---->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"><!---gia ta icons tou footer--->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"><!---bootstrap 5.2--->
-		
-        <!--  Latest compiled JavaScript  -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+		<!--  Latest compiled JavaScript  -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 
 		
 		<style>
@@ -234,7 +234,7 @@
 		</div>
 		
 		<div class="container-fluid">
-			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center">
 				<div class="col pb-5 pl-3 pr-3">
 					<div class="card shadow pb-2 h-100" >
 						<h5 class="card-header text-center">Εξοπλισμός</h5>				
@@ -262,10 +262,10 @@
 					<div class="card shadow h-100" >
 						<h5 class="card-header text-center">Επισκευές</h5>				
 						<img class="card-img-top " src="image/card/rep_1.jpg" alt="Card image cap" >
-						<div class="card-body">
+						<div class="card-body d-flex flex-column">
 							<h5 class="card-title">Επισκευές</h5>
 							<p class="card-text pb-2">Με τον εξοπλισμό που διαθέτουμε, μπορούμε να επισκευάσουμε μεγάλο πλήθος εξαρτηματών που έχουν υποστεί φθορά, όπως πείρους, άξονες και φλάντζες </p>
-							<a href="katask.html#aks" class="btn btn-danger">Επισκευές</a>
+							<a href="katask.html#aks" class="btn btn-danger mt-auto align-self-center">Επισκευές</a>
 						</div>
 					</div>
 				</div>	
@@ -277,62 +277,198 @@
 							<h5 class="card-title">Κατασκευές</h5><!---megalo keimeno gia md othones--->
 							<p class="card-text pb-5 d-block d-xl-none">Διαθέτουμε εξειδίκευση στην κατασκευή αγροτικών μηχανών για την αυτοματοποίηση διάφορων εργασιών. </p>
 							<p class="card-text d-none d-xl-block">Διαθέτουμε εξειδίκευση στην κατασκευή αγροτικών μηχανών για την αυτοματοποίηση διάφορων εργασιών. Η κατασκευή ενός μηχανήματος μπορεί να 
-												γίνει μετά από επικοιμωνία. Επίσης, μπορούμε να υλοποιήσουμε οποιαδήποτε ιδέα έχετε ένα μηχνάνημα ή και κάποια τροποποίηση σε κάποιο υπάρχων μηχάνημα.  </p>
+												γίνει μετά από επικοινωνία. Επίσης, μπορούμε να υλοποιήσουμε οποιαδήποτε ιδέα έχετε ένα μηχνάνημα ή και κάποια τροποποίηση σε κάποιο υπάρχων μηχάνημα.  </p>
 							<a href="katask.html" class="btn btn-danger">Κατασκευές</a>
 					  </div>
+					</div>
+				</div>
+				<div class="col pb-5 pl-3 pr-3">
+					<div class="card shadow h-100" >
+						<h5 class="card-header text-center">Κοπές CNC Plasma</h5>				
+						<img class="card-img-top" src="image/card/plasma1.jpg" alt="Card image cap" >
+						<div class="card-body d-flex flex-column">
+							<h5 class="card-title">Κοπές CNC Plasma</h5>
+							<p class="card-text pb-2">Με την χρήση CNC Plasma μπορούμε να πραγματοποιήσουμε ακριβείς και γρήγορες κοπές. Επιπλέον, μπορείτε να στείλετε τα σχέδια σας για κοπή.</p>
+							<button type="button" class="btn btn-danger mt-auto align-self-center" data-bs-toggle="modal" data-bs-target="#plasmaModal">Αποστολή σχεδίου <span class="badge bg-warning text-dark">ΝΕΟ</span></button>
+						</div>
 					</div>
 				</div>					
 			</div>	
 		</div>
 		
 		
-	<!-- Footer -->
-	<footer class="text-center text-lg-start bg-white text-muted border-top" style="background-color: rgba(0,0,0, 0.2);">
-	<!-- Section: Links  -->
-		<section class="">
-			<div class="container text-center text-md-start mt-5">
-			<!-- Grid row -->
-				<div class="row mt-3">
-				<!-- Grid column -->
-					<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-					<!-- Content -->
-						<h6 class="text-uppercase fw-bold mb-4">Το μηχανουργειο</h6>
-						<img src="image\logo_tr_8_footer.png" class="img-fluid">
-					</div>
-					<!-- Grid column -->
-
-					<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-					<!-- Links -->
-						<h6 class="text-uppercase fw-bold mb-4">ΧΡΗΣΙΜΟΙ ΣΥΝΔΕΣΜΟΙ</h6>
-						<p><a href="katask.html#aks" class="text-reset">Επισκευές</a></p>
-						<p><a href="katask.html" class="text-reset">Κατασκευές</a></p>
-						<p><a href="katask.html#aks" class="text-reset">Μαρκούτσια</a></p>
-						<p><a href="contact.html#map" class="text-reset">Βρες μας στον Χάρτη</a></p>
-					</div>
-					<!-- Grid column -->
-					
-					<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-					<!-- Links -->
-						<h6 class="text-uppercase fw-bold mb-4" id="contact">ΕΠΙΚΟΙΝΩΝΙΑ</h6>
-						<p><button type="button" class="btn btn-secondary btn-sm   me-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Βρείτε μας στον χάρτη" ><i class="fas fa-home me-3 text-secondary"></i><a class="nostyle" href="contact.html#map"> Γ.Παπανδρέου, Δαράτσο Χανιά</a></button></p>
-						<p><i class="fas fa-envelope me-3 text-secondary"></i>fitilis-mixanourgeio@gmail.com</p>
-						<p><i class="fas fa-phone me-3 text-secondary"></i>+30 6951084017</p>
-						<p><i class="fas fa-print me-3 text-secondary"></i>+30 2821031952</p>
-					</div>
-					<!-- Grid column -->
-				</div>
-				<!-- Grid row -->
-			</div>
-	  </section>
-	  <!-- Section: Links  -->
-
-	  <!-- Copyright -->
-	  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
-		© 2023 Copyright: Φυτίλης Κωνσταντίνος
+	<!-- Footer placeholder - loaded from footer.html -->
+	<div id="footer-placeholder"></div>
+	
+	<!-- Modal for CNC Plasma Drawing Submission -->
+	<div class="modal fade" id="plasmaModal" tabindex="-1" aria-labelledby="plasmaModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="plasmaModalLabel">Αποστολή Σχεδίου για Κοπή CNC Plasma</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		  </div>
+		  <div class="modal-body">
+			<p class="text-muted">Στείλτε μας το σχέδιό σας και θα επικοινωνήσουμε μαζί σας το συντομότερο δυνατό για την προσφορά και τις λεπτομέρειες.</p>
+			<form id="plasmaForm">
+			  <div class="mb-3">
+				<label for="fileType" class="form-label">Τύπος Αρχείου</label>
+				<select class="form-select" id="fileType" required>
+				  <option value="" selected disabled>Επιλέξτε τύπο αρχείου...</option>
+				  <option value="drawing">Τεχνικό Σχέδιο (CAD)</option>
+				  <option value="sketch">Σκαρίφημα/Εικόνα</option>
+				</select>
+			  </div>
+			  <div class="mb-3">
+				<label for="fileUpload" class="form-label">Επιλογή Αρχείου</label>
+			<input type="hidden" role="uploadcare-uploader" name="my_file" id="fileUpload" 
+				data-public-key="d526f3b06c5b81620c01"
+				data-tabs="file url"
+				data-multiple="false"
+				data-images-only="false"
+				data-preview-step="true"
+				required />
+				<div class="form-text" id="fileHelp">Επιλέξτε πρώτα τον τύπο αρχείου</div>
+			  </div>
+			  <div class="mb-3">
+				<label for="description" class="form-label">Περιγραφή/Σχόλια</label>
+				<textarea class="form-control" id="description" rows="3" placeholder="Προσθέστε οποιαδήποτε πληροφορία θεωρείτε χρήσιμη (διαστάσεις, υλικό, ποσότητα κλπ.)"></textarea>
+			  </div>
+			  <div class="mb-3">
+				<label for="contactEmail" class="form-label">Email Επικοινωνίας</label>
+				<input type="email" class="form-control" id="contactEmail" placeholder="το email σας" required>
+				<div class="invalid-feedback">Παρακαλώ εισάγετε ένα έγκυρο email.</div>
+			  </div>
+			  <!-- Success Alert (hidden by default) -->
+			  <div class="alert alert-success alert-dismissible fade" role="alert" id="successAlert" style="display: none;">
+				<strong>Επιτυχία!</strong> Η φόρμα υποβλήθηκε επιτυχώς! Θα επικοινωνήσουμε μαζί σας σύντομα.
+				<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			  </div>
+			</form>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ακύρωση</button>
+			<button type="submit" form="plasmaForm" class="btn btn-danger">Αποστολή</button>
+		  </div>
+		</div>
 	  </div>
-	  <!-- Copyright -->
-	</footer>
-	<!-- Footer -->		
+	</div>
+	
+	<script>
+		// Load footer
+		fetch('footer.html')
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById('footer-placeholder').innerHTML = data;
+			});
+			
+		const plasmaModalEl = document.getElementById('plasmaModal');
+		const plasmaForm = document.getElementById('plasmaForm');
+		const fileUpload = document.getElementById('fileUpload');
+		const fileHelp = document.getElementById('fileHelp');
+		const successAlert = document.getElementById('successAlert');
+		let uploadcareWidget = null;
+		let uploadedFileUrl = null;
+		
+		// Initialize Uploadcare widget after DOM is loaded
+		window.addEventListener('load', function() {
+			uploadcareWidget = uploadcare.Widget('#fileUpload');
+			
+			// Listen for file upload completion
+			uploadcareWidget.onUploadComplete(function(fileInfo) {
+				uploadedFileUrl = fileInfo.cdnUrl;
+				console.log('File uploaded:', uploadedFileUrl);
+			});
+		});
+		
+		// Function to reset form to initial state
+		function resetFormToInitial() {
+			plasmaForm.reset();
+			plasmaForm.classList.remove('was-validated');
+			fileHelp.textContent = 'Επιλέξτε πρώτα τον τύπο αρχείου';
+			successAlert.style.display = 'none';
+			successAlert.classList.remove('show');
+			uploadedFileUrl = null;
+			if (uploadcareWidget) {
+				uploadcareWidget.value(null);
+			}
+		}
+		
+		// Reset form when modal is closed
+		plasmaModalEl.addEventListener('hidden.bs.modal', function () {
+			resetFormToInitial();
+		});
+		
+		// Update file input accept attribute based on file type selection
+		document.getElementById('fileType').addEventListener('change', function() {
+			if (this.value === 'drawing') {
+				fileHelp.textContent = 'Αποδεκτά αρχεία: .dwg, .dxf, .pdf';
+				if (uploadcareWidget) {
+					uploadcareWidget.settings({inputAcceptTypes: '.dwg,.dxf,.pdf'});
+				}
+			} else if (this.value === 'sketch') {
+				fileHelp.textContent = 'Αποδεκτά αρχεία: .jpg, .png, .pdf';
+				if (uploadcareWidget) {
+					uploadcareWidget.settings({inputAcceptTypes: '.jpg,.jpeg,.png,.pdf'});
+				}
+			}
+		});
+		
+		// Initialize EmailJS with your public key
+		// TODO: Replace 'YOUR_PUBLIC_KEY' with your actual EmailJS public key from https://dashboard.emailjs.com/admin/account
+		emailjs.init('9M-Tu9c9tYLuAKk5l');
+		
+		// Handle form submission
+		plasmaForm.addEventListener('submit', function(e) {
+			e.preventDefault();
+			
+			// Check form validity
+			if (!plasmaForm.checkValidity()) {
+				e.stopPropagation();
+				plasmaForm.classList.add('was-validated');
+				return;
+			}
+			
+			// Check if file was uploaded
+			if (!uploadedFileUrl) {
+				alert('Παρακαλώ ανεβάστε ένα αρχείο πριν την αποστολή.');
+				return;
+			}
+			
+			// Prepare template parameters
+			const templateParams = {
+				file_type: document.getElementById('fileType').options[document.getElementById('fileType').selectedIndex].text,
+				file_url: uploadedFileUrl,
+				description: document.getElementById('description').value || 'Χωρίς περιγραφή',
+				customer_email: document.getElementById('contactEmail').value,
+				to_email: 'fitilis.mixanourgeio@gmail.com'
+			};
+			
+			// Send email using EmailJS
+			// TODO: Replace 'YOUR_TEMPLATE_ID' with your actual template ID from EmailJS
+			emailjs.send('service_9z2dl42', 'YOUR_TEMPLATE_ID', templateParams)
+				.then(function(response) {
+					console.log('Επιτυχία!', response.status, response.text);
+					
+					// Show Bootstrap alert
+					successAlert.style.display = 'block';
+					successAlert.classList.add('show');
+					
+					// Auto-hide alert and close modal after 3 seconds
+					setTimeout(function() {
+						const modal = bootstrap.Modal.getInstance(plasmaModalEl);
+						modal.hide();
+					}, 3000);
+				}, function(error) {
+					console.error('Αποτυχία...', error);
+					
+					// Show error message
+					successAlert.className = 'alert alert-danger alert-dismissible fade show';
+					successAlert.innerHTML = '<strong>Σφάλμα!</strong> Η αποστολή απέτυχε. Παρακαλώ δοκιμάστε ξανά ή επικοινωνήστε μαζί μας.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>';
+					successAlert.style.display = 'block';
+				});
+		});
+	</script>		
 	</body>
 </html>
 	
